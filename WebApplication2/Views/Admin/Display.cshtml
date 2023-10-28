@@ -1,0 +1,14 @@
+﻿@model List<Detail>
+<table class="table">
+    <thead>
+    <th>Names</th>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.MessMember.Name</td>
+            </tr>
+        }
+    </tbody>
+</table>

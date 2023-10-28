@@ -1,0 +1,10 @@
+﻿@model Detail
+
+<form method="POST">
+    <label asp-for="Date">Select Date:</label>
+    <input asp-for="Date" type="date" required min="@DateTime.Now.ToString("yyyy-MM-dd")">
+    <br><br>
+    <button type="submit">Submit</button>
+    <h3>Pending Dues: @ViewBag.dues</h3>
+
+</form>
